@@ -16,8 +16,8 @@ sftp = require("gulp-sftp");
 
 let process = require("child_process"),
 	connectionSettings = require("./accesses/accesses.js");
-
-const templatePath = "/htdocs/local/templates/polza2017/";
+	
+const templatePath = connectionSettings.server.path;
 const remotePathCss = templatePath+"css",
 	remotePathJs = templatePath+"js",
 	remotePathImg = templatePath+"img";

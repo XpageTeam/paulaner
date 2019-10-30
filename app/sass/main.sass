@@ -7,6 +7,15 @@ $output-bourbon-deprecation-warnings: false;
 *[v-cloak]
 	display: none
 
+.mobile-logo
+	width: 100px
+
+.loader
+	display: none !important
+
+.soc .btn-soc
+	display: none
+
 .apostrov
 	transform: translateX(190px)
 
@@ -366,12 +375,16 @@ body.main
 	width: 100vw
 	min-height: 100vh
 	background-size: cover !important
+
+	&[style^="background"]
+		background: #f7f6f7 !important
+
 .content
-	// margin: 146px 0 170px 402px
 	margin: 82px 0 130px 377px
 	display: flex 
 	flex-direction: column
 	flex: 1 1 auto
+	
 	.wrapper
 		display: flex 
 		flex-direction: column
@@ -408,8 +421,8 @@ body.main
 
 
 	&__item
-		&:not(:first-child)
-			margin-left: 25px
+		&:not(:last-child)
+			margin-right: 25px
 
 	.btn-defolt
 		margin: 0
