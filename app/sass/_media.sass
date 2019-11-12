@@ -688,15 +688,37 @@ $output-bourbon-deprecation-warnings: false;
 	.index-video
 		padding-bottom: 73%
 
+@media screen and (max-width: 1000px)
+	.about, .text-page
+		img
+			margin: 20px 0 !important
+			
+			&[height]
+				height: auto !important
+
+	.about__main-foto
+		top: 0
+
+	.about
+		margin: 0
+
 @media screen and (max-width: 667px)
+
+	#content
+		padding-top: 30px
+
+	.mobile-logo
+		width: 65px
+
+
 
 	.main-nav
 		.main-nav__item
 			&:first-child
-				display: block
+				display: none
 
 			&:nth-child(2)
-				display: none
+				display: block
 
 	.index-video
 		display: none
@@ -1102,8 +1124,6 @@ $output-bourbon-deprecation-warnings: false;
 
 	.base-page
 		margin-bottom: 1.4rem
-		.wrapper 
-			padding: 0
 
 
 	.block-title
