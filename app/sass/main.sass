@@ -402,7 +402,7 @@ body.main
 		width: 100%
 
 		
-.block-title
+.block-title, .news-title
 	position: relative
 	font-size: rem(40)
 	line-height: rem(50)
@@ -443,10 +443,10 @@ body.main
 	display: flex
 	flex-direction: column
 	flex: 1 1 auto
-	padding: 28px 0 0 47px
+	// padding: 28px 0 0 47px
 
-	.block-title
-		margin-bottom: 68px
+	// .block-title
+	// 	margin-bottom: 68px
 
 
 
@@ -454,9 +454,8 @@ body.main
 		flex-direction: row
 
 	&-info
-		padding: 40px 0
-		display: flex;
-		flex-direction: column;
+		display: flex
+		flex-direction: column
 
 	&-photo
 		margin-left: auto
@@ -481,7 +480,9 @@ body.main
 			display: block
 
 
-
+.wrapper
+	.wrapper
+		padding: 0 !important
 
 
 .location
@@ -510,7 +511,6 @@ body.main
 
 .about
 	position: relative
-	margin: 0 0 0 50px
 
 	&__main-foto
 		position: absolute
@@ -582,44 +582,53 @@ body.main
 
 
 .news
-	padding: 0px 70px 0 50px
-	&-title
-		font-size: rem(40)
-		line-height: rem(45)
-		font-weight: 300
-		margin-bottom: 75px
-		color: #333
+	padding: 0px 70px 0 0
+
+	// &-title
+	// 	font-size: rem(40)
+	// 	line-height: rem(45)
+	// 	font-weight: 300
+	// 	margin-bottom: 75px
+	// 	color: #333
+
 	&__list 
 		display: flex 
 		flex-wrap: wrap
-		margin: 0 0 -85px -85px
+		margin: 0 0 -60px -60px
 
 	&__item 
 		display: flex 
 		flex-direction: column
-		width: calc((100% - 85px * 3) / 3)
-		margin: 0 0 65px 85px
+		width: calc((100% - 60px * 3) / 3)
+		margin: 0 0 60px 60px
+
 	&__img 
-		margin-bottom: 50px
+		margin-bottom: 20px
+
+		img
+			display: block
+			width: 100%
+
 	&__title 
-		font-size: rem(25)
-		line-height: rem(30)
+		font-size: rem(20)
+		line-height: 1.5
 		text-decoration: none
-		text-transform: uppercase
+		// text-transform: uppercase
 		color: #333
 		margin-bottom: 30px
+
 	&__info 
 		position: relative
 		font-size: rem(16)
 		line-height: rem(22)
 		letter-spacing: 0.01em
 		padding-left: 62px
+
 		&:before
 			content: ""
 			position: absolute
 			height: 1px
 			left: 0
-    
 			width: 33px
 			background: #c4c7cd
 			top: 11px
